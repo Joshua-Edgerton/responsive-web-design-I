@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html {
+display: flex;
+justify-content: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  width: 100%;
+  /* TB LR */
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+
+header nav {
+display: flex;
+justify-content: center;
+}
+
+
+header nav a {
+
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+  margin: 20px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+div, .logo {
+
+}
+
+/* cta */
+
+.cta .cta-text {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.cta .cta-text button {
+  background: white;
+  padding: 8px 44px;
+  font-size: 40px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+
+}
+
+.main-content {
+  border-top: 1px solid black;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+}
+
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0 10px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+display: flex;
+flex-direction: column;
+
+}
+
+.contact p {
+  margin: 2px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+div, .headNav {
+  Display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+.services111 {
+  Display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid;
+  width: 98.5%;
+  margin: 15px;
+  align-content: center;
+  
+}
+
+.logo111 {
+  display: flex;
+  justify-content: center;
+}
+.serviceHeader {
+width: 100%
+}
+
+.box222 {
+  Display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid;
+  width: 98.5%;
+  justify-content: center;
+  margin: 15px;
+}
+.serviceinfo {
+  display: flex;
+  width: 20;
+  justify-content: center;
+}
+
+.box333 {
+  display: flex;
+  justify-content: center;
+}
+.box444, li {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body {
+background-color: white;
+}
+
+#bot {
+  max-width: 500px;
+}
+
+#align {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  margin: 5px 5px 5px 5px;
+}
+h1, h2{
+  margin: 5px 5px 5px 5px;
+  margin-top: 5px;
+}
+.text-content, #align {
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  padding: 5px;
+}
+@media screen and (max-width:800px){
+header nav a {
+  display: flex;
+  justify-content: center;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.middle-img {
+  width: 400px;
+}
+.cta-text button {
+display: none;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#h41 {
+  margin-right: 30px;
+}
+.bottom-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.serviceinfo {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  #bot {
+    display: none;
+  }
+  .contact {
+   text-align: center; 
+  }
+  #align {
+    width: 100%;
+    margin-right: 40px;
+  }
+}
+
+}
